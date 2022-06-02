@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./Card";
+import styles from "../styles/Cards.module.css";
+
 
 export default function Cards( {cities} ) {
   // acá va tu código
@@ -7,7 +9,7 @@ export default function Cards( {cities} ) {
   
 
   return (
-    <div> {/* al no tener llaver abiertas en el map la => funciona como return */}
+    <div className={styles.cardsContainer}> {/* al no tener llaver abiertas en el map la => funciona como return */}
       {cities.map((city) => ( 
         <Card
           key={city.id}

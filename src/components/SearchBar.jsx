@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "../styles/Search.module.css";
 
 export default function SearchBar(props) {
   // acá va tu código
@@ -8,15 +9,11 @@ export default function SearchBar(props) {
  }
   
 
-
-
   return(
     
-    <div>
-      <input type="text" id='inputSearch'/>
-       <button onClick={handleOnSearch}>Agregar</button>
-       <br />
-       <br />
+    <div className={styles.searchContainer}>
+      <input  placeholder='Ingrese una ciudad...' type="text" id='inputSearch'/>
+       <button className={styles.searchButton} onClick={handleOnSearch}>Agregar</button>
     </div>
     
   ) 

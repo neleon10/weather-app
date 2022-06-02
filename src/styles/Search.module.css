@@ -1,0 +1,22 @@
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.searchContainer input{
+    border: 1px solid rgb(14, 1, 1);
+    box-shadow: 1px 0px 10px 0px black;
+
+}
+.searchButton{
+    background-color:#92c3c3;
+    font-family: "Tiro Devanagari Marathi", serif;
+    
+}
+@media (min-width:920px) { 
+    .searchContainer{
+        
+    }
+}

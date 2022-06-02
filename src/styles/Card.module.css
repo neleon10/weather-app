@@ -1,0 +1,52 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: #92c3c3;
+  border: 3px solid #e8ebf5;
+  margin: 20px;
+  box-shadow: inset -3px -3px 18px 0px black;
+  border-radius: 25px;
+  padding-top: 20px;
+  position: relative;
+  
+}
+
+.font {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-weight: bold;
+}
+
+.cityName {
+  font-size: 25px;
+  text-shadow: -3px -2px 11px white;
+}
+
+.button {
+  position: absolute;
+  border-radius: 28%;
+  right: 1rem;
+}
+
+.CardTemperature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+    left: 45px;
+    top: 78px;
+}
+.CardTemperature label {
+  margin-right: 10px;
+  
+}
+.cardImage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
