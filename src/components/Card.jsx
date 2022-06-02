@@ -3,22 +3,22 @@ import CardTemp from "./Card-temp";
 import PropTypes from "prop-types";
 import styles from "../styles/Card.module.css";
 
-export default function Card({ max, min, name, img, onClose }) {
+export default function Card({ max, min, name, img, onClose}) {
   //destructuring
   // acá va tu código
   function handOnclose() {
     if (typeof onClose === "function") onClose();
   }
+
+
   return (
     <div
-      className={[styles.cardContainer, styles.font, styles["d-flex-c"]].join(
-        " "
-      )}
+      className={[styles.cardContainer, styles.font, styles["d-flex-c"]].join(" ")}
     >
       <button className={styles.button} onClick={handOnclose}>
         X
       </button>
-      
+
       <span className={styles.cityName}>{name}</span>
 
       <div className={styles.CardTemperature}>
