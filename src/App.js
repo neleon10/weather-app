@@ -1,6 +1,6 @@
 import React from "react";
 import Cards from "./components/Cards.jsx";
-import SearchBar from "./components/SearchBar.jsx";
+import Nav from './components/Nav.jsx';
 import data from "./data.js";
 
 
@@ -8,11 +8,12 @@ function App() {
   return (
     <div>
       <div>
-        <Cards cities={data} />
+        <Nav/>
       </div>
       <div>
-        <SearchBar onSearch={(ciudad) => alert(ciudad)} />
+        <Cards cities={data} />
       </div>
+      
 
     </div>
   );

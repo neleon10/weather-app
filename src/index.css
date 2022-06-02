@@ -1,3 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@1&display=swap');
 
-
+/*clase para el body*/
+.bgcolor{
+    background-image: url('./assets/bg.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: aqua;
+}
+@media (min-width:720px ){
+    .bgcolor{
+        background-image: url('./assets/bgdesktop.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-color: #001616;;
+    };
+}

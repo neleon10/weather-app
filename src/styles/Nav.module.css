@@ -1,0 +1,18 @@
+.navContainer{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+.interDivs{
+    display: flex;
+}
+.interDivs p{
+    margin-top: 2.5rem;
+}
+.font {
+    font-family: "Tiro Devanagari Marathi", serif;
+    font-size: 30px;
+    text-shadow: -4px -2px 8px #ffffff;
+  }
