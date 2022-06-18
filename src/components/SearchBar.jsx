@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Search.module.css";
 
+
 export default function SearchBar({ onSearch }) {
   const [nombreCiudad, setnombreCiudad] = React.useState("");
 
@@ -10,6 +11,9 @@ export default function SearchBar({ onSearch }) {
 
   function submit(e) {
     e.preventDefault();
+    !nombreCiudad ? 
+    alert ('Introduce a name')
+    :
     onSearch(nombreCiudad);
     setnombreCiudad("");
   }
