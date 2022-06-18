@@ -2,24 +2,23 @@ import React from "react";
 import CardTemp from "./Card-temp";
 import PropTypes from "prop-types";
 import styles from "../styles/Card.module.css";
+import { Link } from "react-router-dom";
 
-export default function Card({ max, min, name, img, onClose}) {
-  //destructuring
-  // acá va tu código
+                                     //destructuring 
+export default function Card({ max, min, name, img, onClose, id }) {
+ 
   function handOnclose() {
     if (typeof onClose === "function") onClose();
   }
 
-
   return (
-    <div
-      className={[styles.cardContainer, styles.font, styles["d-flex-c"]].join(" ")}
-    >
+    <div className={[styles.cardContainer, styles.font, styles["d-flex-c"]].join(" ")}>
       <button className={styles.button} onClick={handOnclose}>
         X
       </button>
-
-      <span className={styles.cityName}>{name}</span>
+      <Link to={`/ciudad/${id}`}style={{textDecoration: 'inherit'}} >
+        <span className={styles.cityName}>{name}</span>
+      </Link>
 
       <div className={styles.CardTemperature}>
         <CardTemp label="Min" value={min} />

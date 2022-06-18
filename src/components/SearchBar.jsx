@@ -15,13 +15,14 @@ export default function SearchBar({ onSearch }) {
   }
 
   return (
-    <form className={styles.searchContainer} onSubmit={submit}>
+    <form className={styles.searchContainer} onSubmit={submit} autoComplete="off">
       <input
         placeholder="Ingrese una ciudad..."
         type="text"
         id="inputSearch"
         onChange={onChange}
         value={nombreCiudad}
+        autoComplete="false"
       />
       <input type="submit" value="agregar" className={styles.searchButton} />
     </form>

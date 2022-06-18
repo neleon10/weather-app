@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 2rem;   
+}
+.secondMain{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow:2px -2px 20px #ffffff;
+    background-color: dodgerblue;
+    border-radius: 10%;
+}
+
+h2{
+    font-family: "Tiro Devanagari Marathi", serif;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    text-shadow: -1px 1px 3px #ffffff;
+}
+
+.info{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: 0 1rem 0 1rem;
+}
+div{
+    margin: 2px;
+}

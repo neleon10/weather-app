@@ -7,10 +7,14 @@ export default function Cards( {cities,onClose} ) {
   // acá va tu código
   // tip, podés usar un map
   
+  
 
   return (
-    <div className={styles.cardsContainer}> {/* al no tener llaver abiertas en el map la => funciona como return */}
+    <div className={styles.cardsContainer}> 
+    {/* al no tener llaver abiertas en el map la => funciona como return */}
+    
       {cities.map((city) => ( 
+        
         <Card
           key={city.id}
           min={city.min}
@@ -18,6 +22,7 @@ export default function Cards( {cities,onClose} ) {
           name={city.name}
           img={city.img}
           onClose={()=> onClose(city.id)}
+          id = {city.id}
         />
       ))}
     </div>

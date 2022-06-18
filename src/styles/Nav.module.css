@@ -16,3 +16,14 @@
     font-size: 30px;
     text-shadow: -4px -2px 8px #ffffff;
   }
+  .font:hover{
+    text-shadow: 13px 5px 5px #ffffff;
+    transition: text-shadow 1s;
+  }
+  .textlink {
+    color: inherit;
+}
+.textlink:hover{
+    text-decoration: inherit;
+    color: inherit; 
+}
