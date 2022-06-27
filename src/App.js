@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Cards from "./components/Cards.jsx";
 import Nav from "./components/Nav.jsx";
 import Ciudad from "./components/Ciudad.jsx";
-require("dotenv").config()
+
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b"
 //const key = process.env.APIKEY;
