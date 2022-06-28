@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Cards from "./components/Cards.jsx";
 import Nav from "./components/Nav.jsx";
 import Ciudad from "./components/Ciudad.jsx";
+import Clock from "./components/Clock.jsx";
 
 
 const apiKey = "4ae2636d8dfbdc3044bede63951a019b"
@@ -61,6 +62,7 @@ function App() {
   return (
     <div>
       <Nav onSearch={onSearch} />
+      <Clock/>
       <Routes>
         <Route path="/" element={<Cards cities={cities} onClose={onClose} />} />
         <Route path="/ciudad/:id" element={<Ciudad cities={cities} />} />
